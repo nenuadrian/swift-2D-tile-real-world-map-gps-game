@@ -4,13 +4,9 @@ UISCrollView used as viewport for a 2D View based GPS location based game - draw
 
 ## setup
 
-carthage build --platform ios
-
-Inside the HW.
-
-npm install 
-
-Inside server
+```
+./setup.sh
+```
 
 node index.js to start the server and then you can test out the app.
 
