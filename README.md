@@ -32,7 +32,7 @@ Assuming you have NodeJS and NPM installed
 
 This will just run some `npm install`'s
 
-Optional: Get an API key from MapBox.com and update `tile-processor/index.php` at the top if you want to generate new tiles in the future
+Optional: Get an API key from MapBox.com and update `tile-processor/index.js` at the top if you want to generate new tiles in the future
 
 ## start the app
 
