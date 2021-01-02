@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "E9E7B05A-FB97-4DB4-8794-8F4804599F4F"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "C9626909-F6C3-4B0C-A656-A7CEB0E481EE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -22,6 +24,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "ECA4D5FD-C008-4A86-B77C-F4FE99757D39"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -38,6 +41,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "4788B9C4-D85E-4EA1-8B12-4669F61D5997"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -48,6 +52,86 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "setState(state:remaining:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDF3B3FB-A66A-4ADC-8FCC-1B161A150FBB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "get(endpoint:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87F778DF-9ED6-4044-8203-3730DBF21B0E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "get(endpoint:callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87F778DF-9ED6-4044-8203-3730DBF21B0E - ea88ea22daaf95c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static HW.API.get(endpoint: Swift.String, callback: (HW.JSON) -&gt; ()) -&gt; ()"
+                  moduleName = "HW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adriannenu/Desktop/swift-2D-tile-real-world-map-gps-game/HW/HW/API.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "61">
+               </Location>
+               <Location
+                  uuid = "87F778DF-9ED6-4044-8203-3730DBF21B0E - 50b6f9e48732d5b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;HW.JSON&gt;) -&gt; () in static HW.API.get(endpoint: Swift.String, callback: (HW.JSON) -&gt; ()) -&gt; ()"
+                  moduleName = "HW"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adriannenu/Desktop/swift-2D-tile-real-world-map-gps-game/HW/HW/API.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "127">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D2F6F9F-4A8B-4E53-A413-70B98E80C22B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW/APIHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "dataTask(path:params:method:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

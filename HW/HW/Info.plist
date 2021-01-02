@@ -27,10 +27,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location for map</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Stuff</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Hacker location</string>
+	<string>Location for map</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

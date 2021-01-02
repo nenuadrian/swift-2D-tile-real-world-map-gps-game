@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SwiftyJSON
 
 class Tile2D: UIView {
     var data: JSON = JSON.null
@@ -45,7 +44,7 @@ class Tile2D: UIView {
                     layer.addSublayer(shape2)
                     shape2.opacity = 0.5
                     shape2.lineWidth = 1
-                    shape2.lineJoin = kCALineJoinMiter
+                    shape2.lineJoin = CAShapeLayerLineJoin.miter
                     shape2.strokeColor = UIColor(hue: 0.786, saturation: 0.79, brightness: 0.53, alpha: 1.0).cgColor
                     shape2.fillColor = UIColor(hue: 0.786, saturation: 0.15, brightness: 0.89, alpha: 1.0).cgColor
                     

@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import SwiftHTTP
-import SwiftyJSON
 import QuartzCore
 import CoreMotion
 
@@ -26,7 +24,7 @@ class WorldViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("viewDidLoad")
        /* mapScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         mapScrollView.contentSize = CGSize(width: 1000, height: 1000)
         mapScrollView.contentOffset = CGPoint(
@@ -48,24 +46,13 @@ class WorldViewController: UIViewController, UIScrollViewDelegate {
         ))
         
         
-        /*if manager.isDeviceMotionAvailable {
-            manager.deviceMotionUpdateInterval = 0.01
-            manager.startDeviceMotionUpdates(using: .xTrueNorthZVertical, to: .main, withHandler:  {
-                [weak self] (data: CMDeviceMotion?, error: Error?) in
-                if let gravity = data?.gravity {
-                    let rotation = atan2(gravity.x, gravity.y) - Double.pi
-                    self?.view.transform = CGAffineTransform(rotationAngle: CGFloat(rotation))
-                }
-            })
-        }
- */
        // mapScrollView.addSubview(mapView)
         //self.mapScrollView.addSubview(player)
         mapView.addSubview(player)
         self.view.addSubview(mapView)
         
         locationMaster = LocationMaster()
-       // Timer.scheduledTimer(withTimeInterval: TimeInterval(1), repeats: true, block: self.computeTiles)
+        Timer.scheduledTimer(withTimeInterval: TimeInterval(1), repeats: true, block: self.computeTiles)
         let panGesture = UIPanGestureRecognizer(target: self, action:#selector(self.panYellowView))
         mapView.addGestureRecognizer(panGesture)
         let rotation = UIRotationGestureRecognizer(target: self, action: #selector(handleRotate))
@@ -73,7 +60,7 @@ class WorldViewController: UIViewController, UIScrollViewDelegate {
 
     }
     
-    func handleRotate(recognizer : UIRotationGestureRecognizer) {
+    @objc func handleRotate(recognizer : UIRotationGestureRecognizer) {
         if let view = recognizer.view {
             recognizer.view!.transform = recognizer.view!.transform.rotated(by: recognizer.rotation)
             
@@ -91,7 +78,7 @@ class WorldViewController: UIViewController, UIScrollViewDelegate {
         DispatchQueue.main.async {
             let tile2d = Tile2D(frame: CGRect(x: Double(delta.x), y: Double(delta.y), width: 611.5, height: 611.5), data: tile, tileKey: tileKey)
             self.mapView.addSubview(tile2d)
-            self.mapView.bringSubview(toFront: self.player)
+            self.mapView.bringSubviewToFront(self.player)
             WorldViewController.mapTiles[tileKey] = tile2d
         }
     }
@@ -139,22 +126,32 @@ class WorldViewController: UIViewController, UIScrollViewDelegate {
             }
             
             if tilesToFetch.count > 0 {
-                API.get(endpoint: "tiles/[\(tilesToFetch.joined(separator: ","))]", callback: { (data) in
-                    for tile in data["data"].array! {
-                        let tileKey = Vector2(Scalar(tile["x"].number!), Scalar(tile["y"].number!))
-                        
-                        self.tilesDataCache[tileKey] = tile
-                        self.renderTile(tileKey: tileKey)
-                    }
+                let utf8str = "[\(tilesToFetch.joined(separator: ","))]".data(using: String.Encoding.utf8)
 
-                })
+                if let base64Encoded = utf8str?.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
+                {
+                    API.get(endpoint: "tiles/" + base64Encoded, callback: { (data) in
+                        if "\(data["message"])" != "null" {
+                            print("Error \(data["message"])")
+                        } else {
+                            
+                            for tile in data.array! {
+                                let tileKey = Vector2(Scalar(truncating: tile["x"].number!), Scalar(truncating: tile["y"].number!))
+                                
+                                self.tilesDataCache[tileKey] = tile
+                                self.renderTile(tileKey: tileKey)
+                            }
+                        }
+
+                    })
+                }
             }
         }
 
       
     }
 
-    func panYellowView(sender: UIPanGestureRecognizer) {
+    @objc func panYellowView(sender: UIPanGestureRecognizer) {
         
         let translation = sender.translation(in: self.view)
         
@@ -162,6 +159,7 @@ class WorldViewController: UIViewController, UIScrollViewDelegate {
         
         sender.setTranslation(CGPoint.zero, in: self.view)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
