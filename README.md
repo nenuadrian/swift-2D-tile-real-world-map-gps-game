@@ -1,22 +1,26 @@
 # Rendering Geographical map tiles in Swift5 for game-like map interface 
 
-Allows one to render custom maps from scratch without any dependency one external APIs or having to pay for rendering.
+Allows for rendering of custom maps in 2D vanilla iOS views.
 
-The data can be obtained for pre-cache using the instructions presented later in this README.
+There is no dependency on external rendering services. 
 
-## better repository
+There is map data which needs to be downloaded and pre-processed using scripts as explained later on in this README. However, this can be done once for a region of the globe (one could do it for the entire globe/download the data from somewhere) based on MapBox data using even the Free API, and they play without consuming quote further.
 
-Visit this repository for a sceneKit based render,  able to allow a more pokemon-go type feel to the map, with cleaner code including post-processing in 100% SWIFT
+A few powerful features allow for smartly rendering tiles only in the current location.
+
+The project has been upgraded to working condition and Swift 5 as of 2021.
+
+An UIScrollView is used as a viewport for a 2D  based GPS map location  game, a hello world for something like a pokemon go game
+
+## better repository?
+
+Visit this repository for a SceneKit based render, able to allow a more pokemon-go type 3D feel to the map, with cleaner code including post-processing happening in SWIFT without external scripts. 
+
+This does mean it uses quote from MapBox on the fly as it needs to render.
 
 https://github.com/nenuadrian/3D-GPS-location-map-rendering-game-base-swift-ios-scenekit
 
 ![Screenshot](screens/map.png)
-
-UIScrollView used as viewport for a 2D View based GPS map location based game, a hello world for something like pokemon go - drawing the map using pre-processed data from mapbox
-
-Rendering is done using pure vanilla swift code
-
-Upgraded to Swift5 and latest Mapbox data as of 2021 - originally having used mapzen
 
 ## initial setup
 
@@ -46,16 +50,13 @@ The tiles to render this are the ones in the screenshots and are part of the cod
 ## features
 
 * it dynamically decides which tiles to remove and which to render, a few tiles around the focus point for performance
-* code is available to pre-cache tile data from mapbox, preprocess the data and serve it to the app via an API
-
-
+* code is available to pre-cache tile data from mapbox, preprocess the data and serve it to the app via a a NodeJS API
 
 ## how does it work
 
  * index.js is able to fetch tile data on mvt format from mapbox and convert it to JSON files
  * index.php is able to read available files in the data folder as dumped by index.js and convert them from coordinates to meters and do some cleanup for the app to be able to use the data out of the box
  * the app uses swift code to render the tiles
-
 
 ## generating new tiles
 
