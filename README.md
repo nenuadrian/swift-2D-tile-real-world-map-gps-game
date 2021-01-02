@@ -1,4 +1,9 @@
-# swift-2D-tile-real-world-map-gps-game
+# Rendering Geographical map tiles in Swift5 for game-like map interface 
+
+Allows one to render custom maps from scratch without any dependency one external APIs or having to pay for rendering.
+
+The data can be obtained for pre-cache using the instructions presented later in this README.
+
 
 ![Screenshot](screens/map.png)
 
