@@ -4,6 +4,8 @@ Allows one to render custom maps from scratch without any dependency one externa
 
 The data can be obtained for pre-cache using the instructions presented later in this README.
 
+Visit this repository for a sceneKit based render, able to allow a more pokemon-go type feel to the map:
+https://github.com/nenuadrian/3D-GPS-location-map-rendering-game-base-swift-ios-scenekit
 
 ![Screenshot](screens/map.png)
 
