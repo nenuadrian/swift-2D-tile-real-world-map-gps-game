@@ -1,6 +1,6 @@
 # swift-2D-tile-real-world-map-gps-game
 
-![Screenshot](screens/map.jpg)
+![Screenshot](screens/map.png)
 
 UIScrollView used as viewport for a 2D View based GPS map location based game, a hello world for something like pokemon go - drawing the map using pre-processed data from mapbox
 
@@ -68,9 +68,9 @@ php index.php
 
 ## screenshots
 
-![Screenshot](screens/map.jpg)
+![Screenshot](screens/map.png)
 
-![Screenshot](screens/loc.jpg)
+![Screenshot](screens/loc.png)
 
-![Screenshot](screens/map2.jpg)
+![Screenshot](screens/map2.png)
 
