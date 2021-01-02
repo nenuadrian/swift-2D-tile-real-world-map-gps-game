@@ -14,6 +14,7 @@ class LocationMaster: NSObject, CLLocationManagerDelegate {
     static var last: Vector2!
     
     override init() {
+        print("Following location")
         super.init()
 
         self.locationManager.requestAlwaysAuthorization()
@@ -26,6 +27,7 @@ class LocationMaster: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error")
         print(error)
     }
     

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import SwiftHTTP
+
 
 class GridPoint: UIView {
     var tileKey: Vector2 = Vector2.zero
@@ -65,7 +65,7 @@ class GridPoint: UIView {
         self.setState(state: 1)
     }
     
-    func someAction(_ sender:UITapGestureRecognizer){
+    @objc func someAction(_ sender:UITapGestureRecognizer){
         switch self.state {
         case 2:
             API.post(endpoint: "gridPoint/\(Int(self.tileKey.x))/\(Int(self.tileKey.y))/surge", callback: { (data) in

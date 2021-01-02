@@ -10,8 +10,6 @@
 		D617BCAC1E89E76C008556B9 /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D617BCAB1E89E76C008556B9 /* VectorMath.swift */; };
 		D617C4251E89FD43001D2DAD /* GridPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D617C4241E89FD43001D2DAD /* GridPoint.swift */; };
 		D6846A8B1E8964800016C0F0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6846A8A1E8964800016C0F0 /* CoreLocation.framework */; };
-		D6846A8D1E8976A60016C0F0 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6846A8C1E8976A50016C0F0 /* SwiftHTTP.framework */; };
-		D68906971E897B8300D51592 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68906961E897B8300D51592 /* SwiftyJSON.framework */; };
 		D68906991E8985CA00D51592 /* Tile2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68906981E8985CA00D51592 /* Tile2D.swift */; };
 		D689069B1E8993E200D51592 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D689069A1E8993E200D51592 /* Utils.swift */; };
 		D69182001E895D1500DC038E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69181FF1E895D1500DC038E /* AppDelegate.swift */; };
@@ -20,6 +18,8 @@
 		D69182081E895D1500DC038E /* HW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D69182061E895D1500DC038E /* HW.xcdatamodeld */; };
 		D691820A1E895D1500DC038E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69182091E895D1500DC038E /* Assets.xcassets */; };
 		D691820D1E895D1500DC038E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D691820B1E895D1500DC038E /* LaunchScreen.storyboard */; };
+		D69ED8E025A0F4B8002B74A7 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69ED8DF25A0F4B8002B74A7 /* APIHelper.swift */; };
+		D69ED8E425A0F71D002B74A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69ED8E325A0F71D002B74A7 /* SwiftyJSON.swift */; };
 		D6EA44F41E8A26EC00658CAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EA44F31E8A26EC00658CAF /* Constants.swift */; };
 		D6EA44F61E8A281F00658CAF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EA44F51E8A281F00658CAF /* API.swift */; };
 		D6EA44F81E8A536800658CAF /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EA44F71E8A536800658CAF /* Tasks.swift */; };
@@ -33,8 +33,6 @@
 		D617BCAB1E89E76C008556B9 /* VectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
 		D617C4241E89FD43001D2DAD /* GridPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridPoint.swift; sourceTree = "<group>"; };
 		D6846A8A1E8964800016C0F0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		D6846A8C1E8976A50016C0F0 /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Carthage/Build/iOS/SwiftHTTP.framework; sourceTree = "<group>"; };
-		D68906961E897B8300D51592 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D68906981E8985CA00D51592 /* Tile2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile2D.swift; sourceTree = "<group>"; };
 		D689069A1E8993E200D51592 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D69181FC1E895D1500DC038E /* HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +43,8 @@
 		D69182091E895D1500DC038E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D691820C1E895D1500DC038E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D691820E1E895D1500DC038E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69ED8DF25A0F4B8002B74A7 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		D69ED8E325A0F71D002B74A7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D6EA44F31E8A26EC00658CAF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D6EA44F51E8A281F00658CAF /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D6EA44F71E8A536800658CAF /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
@@ -60,8 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6EA44FE1E8B342700658CAF /* CoreMotion.framework in Frameworks */,
-				D68906971E897B8300D51592 /* SwiftyJSON.framework in Frameworks */,
-				D6846A8D1E8976A60016C0F0 /* SwiftHTTP.framework in Frameworks */,
 				D6846A8B1E8964800016C0F0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				D6EA44FD1E8B342700658CAF /* CoreMotion.framework */,
-				D68906961E897B8300D51592 /* SwiftyJSON.framework */,
-				D6846A8C1E8976A50016C0F0 /* SwiftHTTP.framework */,
 				D6846A8A1E8964800016C0F0 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
@@ -113,10 +109,12 @@
 				D617C4241E89FD43001D2DAD /* GridPoint.swift */,
 				D6EA44F31E8A26EC00658CAF /* Constants.swift */,
 				D6EA44F51E8A281F00658CAF /* API.swift */,
+				D69ED8DF25A0F4B8002B74A7 /* APIHelper.swift */,
 				D6EA44F71E8A536800658CAF /* Tasks.swift */,
 				D6EA44F91E8A5DF100658CAF /* Player.swift */,
 				D6EA44FB1E8AC81D00658CAF /* LocationMaster.swift */,
 				D6EA44FF1E8B4D6500658CAF /* GameWorld.swift */,
+				D69ED8E325A0F71D002B74A7 /* SwiftyJSON.swift */,
 			);
 			path = HW;
 			sourceTree = "<group>";
@@ -149,19 +147,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Adrian Nenu";
 				TargetAttributes = {
 					D69181FB1E895D1400DC038E = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 28AS6B884R;
+						LastSwiftMigration = 1230;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = D69181F71E895D1400DC038E /* Build configuration list for PBXProject "HW" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -197,8 +196,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftHTTP.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
@@ -213,6 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69ED8E025A0F4B8002B74A7 /* APIHelper.swift in Sources */,
+				D69ED8E425A0F71D002B74A7 /* SwiftyJSON.swift in Sources */,
 				D617BCAC1E89E76C008556B9 /* VectorMath.swift in Sources */,
 				D689069B1E8993E200D51592 /* Utils.swift in Sources */,
 				D617C4251E89FD43001D2DAD /* GridPoint.swift in Sources */,
@@ -255,20 +254,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -291,12 +300,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -304,20 +314,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -334,10 +354,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -353,12 +374,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = HW/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adrian-Nenu.HW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -373,12 +394,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = HW/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adrian-Nenu.HW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SwiftHTTP
 
 class Player: UIView {
     var tileKey: Vector2 = Vector2.zero
@@ -27,7 +26,7 @@ class Player: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func someAction(_ sender:UITapGestureRecognizer) {
+    @objc func someAction(_ sender:UITapGestureRecognizer) {
         API.put(endpoint: "tasks/homebase", callback: { (data) in
             if data["code"].int! == 200 {
                 TasksManager.addTask(task: data["data"]["task"])

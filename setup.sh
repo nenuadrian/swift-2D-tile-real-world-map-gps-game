@@ -1,11 +1,11 @@
-cd server
+cd tile-processor
 
 npm install
 
 cd ..
 
-cd HW
+cd game-nodejs-server
 
-carthage build --platform ios
+npm install
 
 cd ..
