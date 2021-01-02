@@ -12,11 +12,9 @@ The project has been upgraded to working condition and Swift 5 as of 2021.
 
 An UIScrollView is used as a viewport for a 2D  based GPS map location  game, a hello world for something like a pokemon go game
 
-## better repository?
+## another version
 
-Visit this repository for a SceneKit based render, able to allow a more pokemon-go type 3D feel to the map, with cleaner code including post-processing happening in SWIFT without external scripts. 
-
-This does mean it uses quote from MapBox on the fly as it needs to render.
+Visit this repository for a SceneKit based render, able to allow a more pokemon-go type 3D feel to the map, with cleaner code - but not working currently as it was based on mapzen, and doing post processing in UI, mapbox doesn't have a JSON format, only MVT, so would need some conversion to happen which I've not coded in, it could be changed to leverage what this repository does for post processing of data
 
 https://github.com/nenuadrian/3D-GPS-location-map-rendering-game-base-swift-ios-scenekit
 
