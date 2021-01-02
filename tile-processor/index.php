@@ -1,6 +1,5 @@
 <?php
 
-$apiKey = "pk.eyJ1IjoiYWRyaWFubmVudSIsImEiOiJjaXJhNXZ3djQwMDNzaWtubnM2Y2dxOXRiIn0.0G6mHmuOEPUFh-_juFBg7g";
 
 function tileToLatLon($xtile, $ytile) {
 	$n = pow(2, 16);
