@@ -32,7 +32,7 @@ Assuming you have NodeJS and NPM installed
 
 This will just run some `npm install`'s
 
-Optional: Get an API key from MapBox.com and update `tile-processor/index.js` at the top if you want to generate new tiles in the future
+Optional: Get an API key from MapBox.com and update `tile-processor/index.php` at the top if you want to generate new tiles in the future
 
 ## start the app
 
@@ -64,6 +64,8 @@ You need to understand a bit about the theory of how maps work, I am working by 
 For LAT 37.785834 LON -122.406417 that means tiles around x in range 10483 to 10555 and y in range 25320 to 25335
 
 The planet is split into tiles, where level 16 means about 611 meters per tile.
+
+An in-depth explanation has been saved and attached in web-maps-cartography-guide.pdf
 
 You can find formulas for these computations on the web and in index.php
 
