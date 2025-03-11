@@ -2,3 +2,4 @@ node_modules/**
 vendor/**
 processed/**
 data/**
+package-lock.json
